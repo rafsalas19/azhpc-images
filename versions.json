@@ -63,13 +63,13 @@
     "nvidia": {
         "ubuntu20.04": {
             "driver": {
-                "version": "550.90.07",
-                "sha256": "51acf579d5a9884f573a1d3f522e7fafa5e7841e22a9cec0b4bbeae31b0b9733"
+                "version": "560.35.03",
+                "sha256": "f2932c92fadd43c5b2341be453fc4f73f0ad7185c26bb7a43fbde81ae29f1fe3"
             },
             "fabricmanager": {
                 "distribution": "ubuntu2004",
-                "version": "550.90.07-1",
-                "sha256": "f8321f47875fa79968cda38c77c1723ff9fa3ca010f250f17b0075d84f443058"        
+                "version": "560_560.35.03-1",
+                "sha256": "ad68065a83e2d3a5b3c3b8121fdc146c2aea5cdcca77b1ab4f9a64ac932be966"
             }   
         },
         "ubuntu22.04": {
