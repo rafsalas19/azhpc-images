@@ -68,7 +68,7 @@
             },
             "fabricmanager": {
                 "distribution": "ubuntu2004",
-                "version": "560_560.35.03-1",
+                "version": "560.35.03-1",
                 "sha256": "ad68065a83e2d3a5b3c3b8121fdc146c2aea5cdcca77b1ab4f9a64ac932be966"
             }   
         },
