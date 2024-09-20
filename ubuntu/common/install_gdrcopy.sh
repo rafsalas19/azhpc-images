@@ -14,11 +14,14 @@ GDRCOPY_DISTRIBUTION=$(jq -r '.distribution' <<< $gdrcopy_metadata)
 cuda_metadata=$(get_component_config "cuda")
 CUDA_DRIVER_VERSION=$(jq -r '.driver.version' <<< $cuda_metadata)
 
-TARBALL="v${GDRCOPY_VERSION}.tar.gz"
-GDRCOPY_DOWNLOAD_URL=https://github.com/NVIDIA/gdrcopy/archive/refs/tags/${TARBALL}
+# TARBALL="v${GDRCOPY_VERSION}.tar.gz"
+# GDRCOPY_DOWNLOAD_URL=https://github.com/NVIDIA/gdrcopy/archive/refs/tags/${TARBALL}
 
-${COMMON_DIR}/download_and_verify.sh $GDRCOPY_DOWNLOAD_URL $GDRCOPY_SHA256
-tar -xvf $TARBALL
+# ${COMMON_DIR}/download_and_verify.sh $GDRCOPY_DOWNLOAD_URL $GDRCOPY_SHA256
+# tar -xvf $TARBALL
+
+
+git clone https://github.com/NVIDIA/gdrcopy.git gdrcopy-2.5-1
 
 pushd gdrcopy-${GDRCOPY_VERSION}/packages/
 CUDA=/usr/local/cuda ./build-deb-packages.sh 
